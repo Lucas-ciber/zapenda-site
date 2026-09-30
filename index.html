@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zapenda — agendamento pelo WhatsApp para clínicas odontológicas</title>
+<meta name="description" content="Assistente que responde pacientes no WhatsApp, marca consultas na agenda da clínica e confirma presença na véspera. Piloto de 30 dias sem custo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Figtree:wght@400;600&display=swap">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="envoltorio">
+  <header class="topo">
+    <a class="marca" href="./">zapenda</a>
+    <nav aria-label="Principal"><a href="#piloto">Quero o piloto</a></nav>
+  </header>
+
+  <main>
+    <section class="heroi" aria-labelledby="titulo">
+      <div>
+        <h1 id="titulo">Sua clínica agendando pelo WhatsApp, até quando a recepção está fechada</h1>
+        <p class="sub">O assistente da Zapenda responde os pacientes, marca a consulta num horário que realmente cabe na agenda e confirma a presença na véspera. Sem trocar o número da clínica e sem contratar ninguém.</p>
+        <div class="acoes">
+          <a class="botao" href="#piloto">Começar o piloto de 30 dias</a>
+          <span class="nota">Sem custo e sem fidelidade.</span>
+        </div>
+      </div>
+
+      <figure class="demo">
+        <div class="celular">
+          <div class="tela" role="img" aria-label="Conversa de exemplo: às 22h47 um paciente pede uma limpeza, o assistente oferece três horários de quinta e marca às 09:30. Na quarta, chega o lembrete com os botões Confirmar e Preciso remarcar, e o paciente confirma.">
+            <div class="cab" aria-hidden="true">
+              <div class="avatar"><svg width="20" height="22" viewBox="0 0 20 22" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linejoin="round"><path d="M6.5 2.5C4 2.5 2.5 4.6 2.5 7c0 2.4 1 4.1 1.6 6.4.6 2.3.9 6.1 2.5 6.1 1.5 0 1.8-3.7 3.4-3.7s1.9 3.7 3.4 3.7c1.6 0 1.9-3.8 2.5-6.1.6-2.3 1.6-4 1.6-6.4 0-2.4-1.5-4.5-4-4.5-1.4 0-2.2.8-3.5.8S7.9 2.5 6.5 2.5z"></path></svg></div>
+              <div class="nome">Clínica Exemplo<span>online</span></div>
+            </div>
+            <div class="chat" aria-hidden="true">
+              <div class="dia" style="--d:.1s">Segunda</div>
+              <div class="msg eu" style="--d:.3s">Oi! Queria marcar uma limpeza essa semana<div class="meta">22:47 <svg width="16" height="11" viewBox="0 0 18 12" aria-hidden="true"><path d="M1 6.5l3 3L10.5 2M7 9.5l1 1L16.5 2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div>
+              <div class="msg clinica" style="--d:1s">Claro! A limpeza leva 1 hora. Na quinta tenho <b>08:00</b>, <b>09:30</b> ou <b>14:00</b>. Qual prefere?<div class="meta">22:47</div></div>
+              <div class="msg eu" style="--d:1.7s">9:30 🙂<div class="meta">22:48 <svg width="16" height="11" viewBox="0 0 18 12" aria-hidden="true"><path d="M1 6.5l3 3L10.5 2M7 9.5l1 1L16.5 2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div>
+              <div class="msg clinica" style="--d:2.3s">Pronto! <b>Quinta, 09:30</b>, com a Dra. Camila. Na quarta eu te mando um lembrete.<div class="meta">22:48</div></div>
+              <div class="dia" style="--d:3.1s">Quarta</div>
+              <div class="msg clinica modelo" style="--d:3.5s">Olá! Passando para lembrar da sua consulta amanhã, <b>quinta às 09:30</b>. Podemos confirmar sua presença?<div class="meta">09:30</div><div class="botoes"><span>Confirmar</span><span>Preciso remarcar</span></div></div>
+              <div class="msg eu" style="--d:4.3s">Confirmar<div class="meta">09:41 <svg width="16" height="11" viewBox="0 0 18 12" aria-hidden="true"><path d="M1 6.5l3 3L10.5 2M7 9.5l1 1L16.5 2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div>
+            </div>
+            <div class="campo" aria-hidden="true">
+              <div class="texto">Mensagem</div>
+              <div class="enviar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l16-8-6 16-2.5-6.5L4 12z"></path></svg></div>
+            </div>
+          </div>
+        </div>
+        <figcaption>Pedido às 22h47, com a clínica fechada. Na véspera, o paciente confirma com um toque.</figcaption>
+      </figure>
+    </section>
+  </main>
+</div>
+
+<div class="faixa">
+  <section class="secao envoltorio" aria-labelledby="como">
+    <h2 id="como">Como funciona</h2>
+    <ol class="passos">
+      <li>
+        <h3>O paciente chama</h3>
+        <p>No WhatsApp da clínica, a qualquer hora, inclusive à noite e no fim de semana.</p>
+      </li>
+      <li>
+        <h3>Escolhe um horário que cabe</h3>
+        <p>O assistente pergunta o procedimento e só oferece horários com tempo suficiente para ele.</p>
+      </li>
+      <li>
+        <h3>Confirma na véspera</h3>
+        <p>A consulta entra na agenda e o paciente confirma ou pede para remarcar com um toque.</p>
+      </li>
+    </ol>
+  </section>
+</div>
+
+<section class="secao envoltorio" aria-labelledby="ganhos">
+  <h2 id="ganhos">O que muda no dia a dia da clínica</h2>
+  <dl class="ganhos">
+    <div><dt>A agenda respeita a duração de cada procedimento</dt><dd>Limpeza, canal ou clareamento ocupam o tempo certo. Uma consulta nunca é marcada em cima da outra.</dd></div>
+    <div><dt>Menos cadeira vazia</dt><dd>Quando alguém cancela, a vaga é oferecida na hora a quem está na fila de encaixe.</dd></div>
+    <div><dt>A equipe entra quando precisa</dt><dd>Se o paciente pedir para falar com alguém, reclamar ou tiver uma urgência, a secretária é avisada e assume a conversa.</dd></div>
+    <div><dt>Tudo no celular</dt><dd>Agenda do dia e da semana, faltas, bloqueios de horário e procedimentos num painel simples.</dd></div>
+    <div><dt>Resumo todo dia às 19h</dt><dd>No WhatsApp do dono: as consultas de amanhã e o que foi agendado no dia.</dd></div>
+    <div><dt>O número da clínica continua o mesmo</dt><dd>O assistente trabalha num número próprio. O WhatsApp de sempre segue com a equipe.</dd></div>
+  </dl>
+</section>
+
+<div class="faixa">
+  <section class="secao envoltorio limites">
+    <div>
+      <h2>O que o assistente não faz</h2>
+      <p>Não dá diagnóstico, não fecha valores nem descontos e não toma nenhuma decisão clínica. Isso continua com os dentistas e a equipe.</p>
+    </div>
+    <div>
+      <h2>Como cuidamos dos dados</h2>
+      <p>O paciente recebe um aviso de privacidade na primeira conversa, o assistente não pede CPF e as conversas são apagadas após 90 dias. Os detalhes estão na <a href="privacidade.html">política de privacidade</a>.</p>
+    </div>
+  </section>
+</div>
+
+<section class="secao envoltorio" id="piloto" aria-labelledby="titulo-piloto">
+  <div class="piloto">
+    <div>
+      <h2 id="titulo-piloto">Piloto de 30 dias, sem custo</h2>
+      <p>Configuramos o assistente com os horários, dentistas e procedimentos da sua clínica. No fim dos 30 dias, você decide olhando as consultas que ele marcou.</p>
+      <p class="preco">Depois do piloto, a partir de R$ 297 por mês.</p>
+    </div>
+    <div>
+      <a class="botao" href="mailto:secretariasupport@gmail.com?subject=Piloto%20Zapenda">Pedir o piloto por e-mail</a>
+    </div>
+  </div>
+</section>
+
+<footer class="envoltorio rodape">
+  <span>© 2026 Zapenda</span>
+  <span><a href="privacidade.html">Política de privacidade</a> &nbsp; <a href="mailto:secretariasupport@gmail.com">secretariasupport@gmail.com</a></span>
+</footer>
+</body>
+</html>
