@@ -19,7 +19,7 @@
 
   <main class="documento">
     <h1>Política de privacidade</h1>
-    <p class="data">Versão de 1º de outubro de 2026</p>
+    <p class="data">Versão de 2 de outubro de 2026</p>
 
     <div class="destaque">
       <p><strong>Em resumo:</strong> a Zapenda opera um assistente de agendamento pelo WhatsApp em nome de clínicas odontológicas. Tratamos só o necessário para marcar, confirmar e lembrar consultas. Não pedimos CPF nem informações clínicas, apagamos as conversas após 90 dias e só enviamos mensagens de aniversário ou de retorno a quem aceitou recebê-las.</p>
@@ -77,7 +77,7 @@
     </ul>
 
     <h2>6. Com quem os dados são compartilhados</h2>
-    <p>Para o serviço funcionar, usamos três fornecedores. Cada um recebe apenas o necessário para a sua parte:</p>
+    <p>Para o serviço funcionar, usamos quatro fornecedores. Cada um recebe apenas o necessário para a sua parte:</p>
     <div class="tabela">
       <table>
         <thead><tr><th scope="col">Fornecedor</th><th scope="col">Para quê</th><th scope="col">Onde</th></tr></thead>
@@ -85,13 +85,14 @@
           <tr><td>Meta (WhatsApp Business Platform)</td><td>Transmitir as mensagens entre o paciente e o assistente</td><td>Estados Unidos e outros países</td></tr>
           <tr><td>Anthropic</td><td>Processar o texto das mensagens para entender o pedido do paciente e escrever a resposta</td><td>Estados Unidos</td></tr>
           <tr><td>Railway</td><td>Hospedar o servidor e o banco de dados do serviço</td><td>Estados Unidos</td></tr>
+          <tr><td>Cloudflare (R2)</td><td>Guardar cópias de segurança cifradas do banco de dados, para recuperação em caso de falha</td><td>Estados Unidos e outros países</td></tr>
         </tbody>
       </table>
     </div>
     <p>Pelos termos comerciais da Anthropic para uso por API, o conteúdo enviado não é usado para treinar os modelos de inteligência artificial dela. Os dados também podem ser informados a autoridades quando houver obrigação legal ou ordem judicial.</p>
 
     <h3>Transferência internacional</h3>
-    <p>Como os três fornecedores armazenam ou processam dados fora do Brasil, há transferência internacional de dados, nos termos do art. 33 da LGPD. Ela acontece apenas para prestar o serviço, com fornecedores que mantêm compromissos contratuais de proteção de dados.</p>
+    <p>Como os quatro fornecedores armazenam ou processam dados fora do Brasil, há transferência internacional de dados, nos termos do art. 33 da LGPD. Ela acontece apenas para prestar o serviço, com fornecedores que mantêm compromissos contratuais de proteção de dados.</p>
 
     <h2>7. Por quanto tempo guardamos</h2>
     <ul>
@@ -102,7 +103,7 @@
     </ul>
 
     <h2>8. Segurança</h2>
-    <p>Toda a comunicação com o servidor é criptografada (HTTPS). O painel da clínica exige chave de acesso, usa sessão protegida e bloqueia tentativas repetidas de acesso. As credenciais do serviço ficam em variáveis protegidas no provedor de hospedagem, nunca no código. Nenhum sistema é totalmente imune a falhas; se houver um incidente de segurança que possa trazer risco aos titulares, a clínica será avisada para que as comunicações exigidas pela LGPD sejam feitas.</p>
+    <p>Toda a comunicação com o servidor é criptografada (HTTPS). O painel da clínica exige chave de acesso, usa sessão protegida e bloqueia tentativas repetidas de acesso. As credenciais do serviço ficam em variáveis protegidas no provedor de hospedagem, nunca no código. As cópias de segurança diárias do banco de dados são cifradas antes de sair do servidor e mantidas por 30 dias. Nenhum sistema é totalmente imune a falhas; se houver um incidente de segurança que possa trazer risco aos titulares, a clínica será avisada para que as comunicações exigidas pela LGPD sejam feitas.</p>
 
     <h2>9. Seus direitos</h2>
     <p>Pela LGPD (art. 18), você pode pedir:</p>
