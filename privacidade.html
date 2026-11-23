@@ -19,7 +19,7 @@
 
   <main class="documento">
     <h1>Política de privacidade</h1>
-    <p class="data">Versão de 2 de outubro de 2026</p>
+    <p class="data">Versão de 23 de novembro de 2026</p>
 
     <div class="destaque">
       <p><strong>Em resumo:</strong> a Zapenda opera um assistente de agendamento pelo WhatsApp em nome de clínicas odontológicas. Tratamos só o necessário para marcar, confirmar e lembrar consultas. Não pedimos CPF nem informações clínicas, apagamos as conversas após 90 dias e só enviamos mensagens de aniversário ou de retorno a quem aceitou recebê-las.</p>
@@ -40,6 +40,7 @@
     <ul>
       <li>Número de telefone do WhatsApp e o nome informado.</li>
       <li>O conteúdo das mensagens trocadas com o assistente.</li>
+      <li>Mensagens de voz: o áudio é enviado a um fornecedor de transcrição (a OpenAI) só para ser transformado em texto e é descartado em seguida. A Zapenda não grava o áudio. Fica registrado apenas o texto transcrito, marcado como “(áudio transcrito)”. Áudios de mais de 2 minutos não são transcritos: o assistente pede que o paciente escreva.</li>
       <li>Dados do agendamento: procedimento, data, horário, dentista e situação da consulta (agendada, confirmada, realizada, cancelada ou falta).</li>
       <li>Preferências para a fila de encaixe, como turno e dia da semana.</li>
       <li>Data de nascimento, apenas se o paciente quiser informar. Ela nunca é exigida para marcar consulta.</li>
@@ -77,22 +78,23 @@
     </ul>
 
     <h2>6. Com quem os dados são compartilhados</h2>
-    <p>Para o serviço funcionar, usamos quatro fornecedores. Cada um recebe apenas o necessário para a sua parte:</p>
+    <p>Para o serviço funcionar, usamos cinco fornecedores. Cada um recebe apenas o necessário para a sua parte:</p>
     <div class="tabela">
       <table>
         <thead><tr><th scope="col">Fornecedor</th><th scope="col">Para quê</th><th scope="col">Onde</th></tr></thead>
         <tbody>
           <tr><td>Meta (WhatsApp Business Platform)</td><td>Transmitir as mensagens entre o paciente e o assistente</td><td>Estados Unidos e outros países</td></tr>
           <tr><td>Anthropic</td><td>Processar o texto das mensagens para entender o pedido do paciente e escrever a resposta</td><td>Estados Unidos</td></tr>
+          <tr><td>OpenAI</td><td>Transformar em texto as mensagens de voz enviadas pelo paciente (o áudio é enviado só para isso e não é gravado pela Zapenda)</td><td>Estados Unidos</td></tr>
           <tr><td>Railway</td><td>Hospedar o servidor e o banco de dados do serviço</td><td>Estados Unidos</td></tr>
           <tr><td>Cloudflare (R2)</td><td>Guardar cópias de segurança cifradas do banco de dados, para recuperação em caso de falha</td><td>Estados Unidos e outros países</td></tr>
         </tbody>
       </table>
     </div>
-    <p>Pelos termos comerciais da Anthropic para uso por API, o conteúdo enviado não é usado para treinar os modelos de inteligência artificial dela. Os dados também podem ser informados a autoridades quando houver obrigação legal ou ordem judicial.</p>
+    <p>Pelos termos comerciais da Anthropic e da OpenAI para uso por API, o conteúdo enviado não é usado para treinar os modelos de inteligência artificial deles. Os dados também podem ser informados a autoridades quando houver obrigação legal ou ordem judicial.</p>
 
     <h3>Transferência internacional</h3>
-    <p>Como os quatro fornecedores armazenam ou processam dados fora do Brasil, há transferência internacional de dados, nos termos do art. 33 da LGPD. Ela acontece apenas para prestar o serviço, com fornecedores que mantêm compromissos contratuais de proteção de dados.</p>
+    <p>Como os cinco fornecedores armazenam ou processam dados fora do Brasil, há transferência internacional de dados, nos termos do art. 33 da LGPD. Isso inclui o áudio das mensagens de voz, enviado à OpenAI, nos Estados Unidos, para ser transcrito. Ela acontece apenas para prestar o serviço, com fornecedores que mantêm compromissos contratuais de proteção de dados.</p>
 
     <h2>7. Por quanto tempo guardamos</h2>
     <ul>
