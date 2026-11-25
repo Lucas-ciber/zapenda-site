@@ -96,6 +96,7 @@ p{margin:0}
 
 .rodape{padding-top:40px;padding-bottom:56px;color:var(--suave);font-size:15px;display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
 .rodape a{color:var(--suave)}
+.rodape .legal{flex-basis:100%;margin:0;font-size:14px}
 
 /* Página de texto longo (política) */
 .documento{max-width:720px;padding:32px 0 64px}
